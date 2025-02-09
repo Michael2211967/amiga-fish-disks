@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Fish Disk 0005</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2"><h2><u>Inhalt von Disk 0005</u></h2></th>
+        </tr>
+        <tr>
+            <th>Programm</th>
+            <th>Beschreibung</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>      
+                This is disk 5 of the freely distributable AMIGA software library.
+                It contains many of the programs, written by Commodore-Amiga people,
+                that were included in disk number 1.  However, they have been cleaned
+                up so that they compile cleanly on the AMIGA, return resources 
+                allocated, etc.
+            </td>
+        <tr>
+            <td>
+                <b>cons</b>
+            </td>
+            <td>
+                Console device demo program with supporting macro routines <br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>freemap</b>
+            </td>  
+            <td>  
+                Creates a visual diagram of free memory.  Comes with
+                custom icon so can be run from workbench screen.<br>
+                Author: Robert J. Mical
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>input.dev</b>
+            </td>
+            <td>
+                In combination with hander.interface.asm (supplied),
+                lets a user trap keyboard or mouse events before they
+                get to Intuition and if desired, install new (phony/
+                generated/other-devices-mouse-simulations) into the
+                input stream.  Handler.interface.asm is needed to convert
+                the calling sequence performed by the input.task for
+                the input stream management into something that a
+                C program can understand.<br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>joystick</b>
+            </td>
+            <td>
+                Shows how to set up the gameport device as a joystick.
+                Reports parameters received from joystick hooked to
+                right port.<br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>keyboard</b>
+            </td>
+            <td>
+                Sample program to demonstrate direct communications with
+                the keyboard.<br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>layers</b>
+            </td>
+            <td>
+                Shows use of the layers library, used by Intuition to
+                create windows (layers handles all overlapping drawing
+                areas and keeps things straight, sending to the back,
+                bringing to the front, making larger/smaller, etc.)<br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>mandelbrot</b>
+            </td>
+            <td>
+                Latest and greatest mandelbrot program.  New features
+                include the ability to save images in "iff" format,
+                for reading into Deluxe Paint or other programs that
+                use iff.  Also includes code from GraphiCraft to handle
+                color palette and change colors at will.  Many additions
+                by RJ Mical.<br>
+                Author: Robert French
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>mouse</b>
+            </td>
+            <td>
+                Shows how to set up the gameport device as a mouse so
+                that hooking up the mouse to the right port gives access
+                to mouse information.<br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>one.window</b>
+            </td>
+            <td>
+                Produces a window with a console attached.  Does graphics
+                in the top half and limits the console activity to the
+                lower half.<br>
+                Author: Rob Peck  12/18/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>parallel</b>
+            </td>
+            <td>
+                Demonstrates access to the parallel port.<br>
+                Author: Tom Pohorsky  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>printer</b>
+            </td>
+            <td>
+                Shows how to open and use a printer, does a screen dump
+                of the workbench screen if there is a graphics-capable
+                printer attached.<br>
+                Currently does not compile under Lattice C Ver3.02 and
+                does not link under Lattice C Ver3.03.<br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>print.support</b>
+            </td>
+            <td>
+                Printer support routines.  Currently won't compile,
+                missing a header file "local.h".<br>
+                Author: unknown
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>proctest</b>
+            </td>
+            <td>
+                Sample code to create a process, set up message ports,
+                pass messages, etc.  Sample slave code for create process
+                test (littleproc.c) currently does not link under either
+                Lattice C 3.02 or 3.03 (unresolved global variables not
+                in libraries).<br>
+                Author: Rob Peck  1/4/86
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>region</b>
+            </td>
+            <td>
+                Demonstrates how a drawing area can be split into linked
+                rectangular regions.  Draws a rectangle in a single
+                playfield display, then draws "Behind a Fence" several
+                times behind an apparent fence in the rectangle.
+                Only works under Lattice Ver3.03.<br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>samplefont</b>
+            </td>
+            <td>
+                A sample font that produces clubs, hearts, spaces, and
+                diamonds as its four characters.  Shows precisely what
+                is contained in an Amiga font.<br>
+                Author: Unknown
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>serial</b>
+            </td>
+            <td>
+                Demonstrates access to the serial port.  Requires an
+                external terminal connected to the serial port.<br>
+                Author: Unknown
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>singlePlayfield</b>
+            </td>
+            <td>
+                Creates and displays a 320 by 200 by 2 bit plane
+                single playfield display.  Completely covers Intuition's
+                display, but gives the system back at exit.<br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>speechtoy</b>
+            </td>
+            <td>
+                Latest and greatest version of Dave's cute speech demo
+                program.  Comes with custom icon so can be run from
+                a workbench screen.<br>
+                Author: Dave Lucas
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>speech.demo</b>
+            </td>
+            <td>
+                A much simplified version of speechtoy.  Also includes
+                exec support functions for extended IO requests,
+                CreateExtIO() to allocate and initialize a new IO request
+                block and DeleteExtIO() to free an extended IO request
+                block.<br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>text.demo</b>
+            </td>
+            <td>
+                Sample program that asks AvailFonts() to make a list of
+                the fonts that are available, then opens a window and
+                then prints a description of the various attributes that
+                can be applied to the fonts, in the font itself.
+                Previous versions were released as "whichfont".<br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>timer</b>
+            </td>
+            <td>
+                Simple timer example program.  Includes dynamic
+                allocation of data structures needed to communicate
+                with the timer device, as well as the actual device
+                IO.<br>
+                Author: Rob Peck  12/1/85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>trackdisk</b>
+            </td>
+            <td>
+                Demonstrates use of trackdisk driver.  Useful example of
+                "raw" disk read/write.<br>
+                Author Rob Peck  12/1/85
+                </td>
+        </tr>
+    </table>
+</body>
+</html>
